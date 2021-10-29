@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;300&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" 
+    integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <!-- Header / Navbar for the page -->
+    <header class="navbar">
+        <div class="left-side">
+            <a href="./index.html">
+                <div class="logo">Brian <span>Rizer</span></div>
+            </a>
+        </div>
+
+        <div class="middle">
+            <div class="todo-logo">My To Do List</div>
+        </div>
+
+        <div class="right-side">
+            <div class='link-wrapper'>
+                <a href="https://twitter.com/wompered" target="_blank"><span class="twitter-logo"><i class="uil uil-twitter"></i></span> Twitter</a>
+            </div>
+            <div class='link-wrapper'>
+                <a href="https://www.linkedin.com/in/brian-rizer-a2ba62209/" target="_blank"><span class="linkedin-logo"><i class="uil uil-linkedin"></i></span> LinkedIn</a>
+            </div>
+            <div class='link-wrapper'>
+                <a href="https://github.com/Brian-pro" target="_blank"><span class="github-logo"><i class="uil uil-github"></i></span> GitHub</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- To Do / Content for the page -->
+
+    <!--Adding to the todo list-->
+    <div class="todo-content">
+        <form>
+            <input type="text" class="todo-input">
+            <button class="todo-button" type="submit">
+                <span class="button-text">Add Task</span>
+                <span class="button-icon"><i class="fas fa-plus-square"></i></span>
+            </button>
+        </form>
+        <div class="todo-container">
+            <ul class="todo-list">
+                
+            </ul>
+        </div>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+</html>

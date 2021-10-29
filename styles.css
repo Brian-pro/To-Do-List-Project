@@ -1,0 +1,131 @@
+* {
+    padding: 0px;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+}
+
+
+/* Header! */
+.navbar {
+    display: flex;
+    padding: 38px;
+    flex-wrap: wrap;
+}
+
+/* Header: Left Side / Logo */
+.left-side {
+    float: left; 
+    width: 33.333%;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+.left-side a {
+    text-decoration: none;
+    color: black;
+}
+
+.left-side span {
+    font-weight: bold;
+    border: 3px solid black;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+}
+
+/* Header: Title Header */
+.middle {
+    display: inline-block; 
+    width: 33.333%;
+    text-align: center;
+    font-size: 2.0rem;
+}
+
+/* Header: Right Side / Important Links */
+.right-side {
+    width: 33.333%;
+    font-size: 1.5rem;
+}
+
+.link-wrapper {
+    float: right;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+}
+
+.twitter-logo {
+    color: #1DA1F2;
+}
+
+.linkedin-logo {
+    color: #0e76a8;
+}
+
+.github-logo {
+    color: #171515;
+}
+
+.link-wrapper a {
+    text-decoration: none;
+    color: black;
+    margin-right: 30px;
+    transition: color 0.5s;
+}
+
+.link-wrapper a:hover {
+    border-bottom: 1px solid black;
+}
+
+/* Todo Styling */
+.todo-content {
+    margin: auto;
+    padding: 10px;
+    width: 40%;
+    border: 1px solid black;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+}
+
+form > input, form button  {
+    font-size: 2.0rem;
+}
+
+form > button {
+    cursor: pointer;
+    display: inline-flex;
+    padding: 0px;
+    margin-left: 5px;
+    background: #009578;
+    border: none;
+    border-radius: 5px;
+    overflow: hidden;
+    outline: none;
+}
+
+form > button:hover {
+    background: #008168;
+}
+
+form > button:active {
+    background: #008168;
+}
+
+.button-text, .button-icon {
+    display: inline-flex;
+    align-items: center;
+    padding: 0 20px;
+    height: 100%;
+    color: white;
+}
+
+.button-icon {
+    background: rgb(0, 0, 0, 0.08); /*black background with 8% opacity */
+}
