@@ -7,3 +7,8 @@ Instagram Icon
 
 GitHub Icon
 <a href="https://iconscout.com/icons/github" target="_blank">Github Icon</a> on <a href="https://iconscout.com">Iconscout</a>
+
+
+Tasks:
+- Add scroll after certain number fo tasks added so task do not go off screen
+- saving the data so it does not disappear after refresh

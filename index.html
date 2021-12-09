@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" 
     integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
     <!-- Icons -->
+    <link rel="shortcut icon" href="#">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <!-- CSS -->
@@ -42,10 +43,10 @@
 
     <!-- To Do / Content for the page -->
 
-    <!--Adding to the todo list-->
+    <!-- Adding to the todo list -->
     <div class="todo-content">
         <form>
-            <input type="text" class="todo-input">
+            <input type="text" class="todo-input" placeholder=" Add task here...">
             <button class="todo-button" type="submit">
                 <span class="button-text">Add Task</span>
                 <span class="button-icon"><i class="fas fa-plus-square"></i></span>
@@ -53,11 +54,19 @@
         </form>
         <div class="todo-container">
             <ul class="todo-list">
-                
+
             </ul>
+        </div>
+        <div class="todo-footer">
+            <span class="todo-counter">There are <span id="todo-count">0</span> tasks left to do!</span>
+            <button class="clear-all">
+                <span class="button-text">Clear All</span>
+                <span class="button-icon"><i class="fas fa-ban"></i></span>
+            </button>
         </div>
     </div>
 
+    <!-- Linking the JS file -->
     <script src="./app.js"></script>
 </body>
 </html>

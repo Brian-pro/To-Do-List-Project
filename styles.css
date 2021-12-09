@@ -1,3 +1,17 @@
+/* COLORS
+    - First Choice -
+    Purple: #5927e5
+    Purple/grey: #9b89b3
+    Light pink: #fCf7ff
+    Black (optional): #1f1926
+
+    - Second Choice -
+    Blue: #4B83E7
+    Cyan: #66E5CD
+
+    Delete Red: #E74D3D
+*/
+
 * {
     padding: 0px;
     margin: 0;
@@ -7,7 +21,9 @@
 
 body {
     font-family: 'Work Sans', sans-serif;
-}
+    height: 100vh;
+    background-image: linear-gradient(to top right, #4B83E7, #66E5CD);
+}   
 
 
 /* Header! */
@@ -27,14 +43,14 @@ body {
 
 .left-side a {
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 .left-side span {
     font-weight: bold;
-    border: 3px solid black;
+    border: 3px solid #5927e5;
     border-radius: 5px;
-    background-color: black;
+    background-color: #5927e5;
     color: white;
 }
 
@@ -44,6 +60,7 @@ body {
     width: 33.333%;
     text-align: center;
     font-size: 2.0rem;
+    color: white;
 }
 
 /* Header: Right Side / Important Links */
@@ -72,7 +89,7 @@ body {
 
 .link-wrapper a {
     text-decoration: none;
-    color: black;
+    color: white;
     margin-right: 30px;
     transition: color 0.5s;
 }
@@ -81,12 +98,13 @@ body {
     border-bottom: 1px solid black;
 }
 
-/* Todo Styling */
+/* Todo Styling  Structure*/
 .todo-content {
     margin: auto;
     padding: 10px;
     width: 40%;
-    border: 1px solid black;
+    border-radius: 5px;
+    background: #fCf7ff;
 }
 
 form {
@@ -95,15 +113,17 @@ form {
 }
 
 form > input, form button  {
+    margin: 10px 10px;
     font-size: 2.0rem;
 }
 
+/* Add Todo Task Button */
 form > button {
     cursor: pointer;
     display: inline-flex;
     padding: 0px;
     margin-left: 5px;
-    background: #009578;
+    background: #5927e5;
     border: none;
     border-radius: 5px;
     overflow: hidden;
@@ -111,11 +131,11 @@ form > button {
 }
 
 form > button:hover {
-    background: #008168;
+    background: #4f21cf;
 }
 
 form > button:active {
-    background: #008168;
+    background: #4f21cf;
 }
 
 .button-text, .button-icon {
@@ -128,4 +148,103 @@ form > button:active {
 
 .button-icon {
     background: rgb(0, 0, 0, 0.08); /*black background with 8% opacity */
+}
+
+/* Making it so clicking the actual icon on button does not interfere with clicking */
+.fa-trash, .fa-check {
+    pointer-events: none; /* makes it so the element does not react to pointer events */
+}
+
+/* Individual Todo Tasks */
+.todo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.0rem;
+}
+
+.todo-list {
+    min-width: 92.5%;
+    list-style: none;
+}
+
+.todo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px;
+    border-radius: 5px;
+    background: rgb(0, 0, 0, 0.08);
+}
+
+.todo .todo-item {
+    flex: 1;
+    padding-left: 5px;
+}
+
+/* Complete Button */
+.todo .complete-button {
+    cursor: pointer;
+    background-color: #0fc737;
+    color: white;
+    border: none;
+    padding: 1.0rem;
+    font-size: 1.0rem;
+}
+
+/* Delete Button */
+.todo .delete-button {
+    cursor: pointer;
+    background-color: #E74D3D;
+    color: white;
+    border: none;
+    border-radius: 0px 5px 5px 0px;
+    padding: 1.0rem;
+    font-size: 1.0rem;
+}
+
+
+.todo .complete-button:hover {
+    background-color: #0ebd34;
+}
+
+.todo .delete-button:hover {
+    background-color: #dd4d3d;
+}
+
+.completed {
+    opacity: 0.5;
+    text-decoration: line-through;
+}
+
+/* Todo counter and Clear all */
+.todo-footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 33px 0px 33px;
+}
+
+.todo-counter {
+    width: 60%;
+    font-size: 1.5rem;
+}
+
+.todo-footer > button {
+    cursor: pointer;
+    display: inline-flex;
+    padding: 0px;
+    background: #5927e5;
+    border: none;
+    border-radius: 5px;
+    overflow: hidden;
+    outline: none;
+    font-size: 1.5rem;
+}
+
+.todo-footer > button:hover {
+    background: #4f21cf;
+}
+
+.todo-footer > button:active {
+    background: #4f21cf;
 }
